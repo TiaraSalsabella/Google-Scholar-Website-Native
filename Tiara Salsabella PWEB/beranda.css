@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    position: relative;
+    z-index: 100;
+}
+
+.sidebar-collapsed {
+    width: 60px;
+}
+
+.menu-toggle {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-small {
+    display: flex;
+    align-items: center;
+    padding: 0 15px 15px;
+}
+
+.google-logo-small {
+    height: 24px;
+    margin-right: 5px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 5px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #5f6368;
+    text-decoration: none;
+    border-radius: 0 50px 50px 0;
+    transition: background-color 0.2s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #f1f3f4;
+}
+
+.sidebar-menu .material-icons {
+    margin-right: 15px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cendekia-text {
+    color: #5f6368;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.left-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 10px; 
+    position: fixed;
+    left: 0;
+}
+
+.profile-icon {
+    font-size: 40px; 
+    color: #5f6368; 
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.center-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.logo-large {
+    margin-bottom: 30px;
+}
+
+.google-text {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.g {
+    color: #4285f4;
+}
+
+.o1 {
+    color: #ea4335;
+}
+
+.o2 {
+    color: #fbbc05;
+}
+
+.g2 {
+    color: #4285f4;
+}
+
+.l {
+    color: #34a853;
+}
+
+.e {
+    color: #ea4335;
+}
+
+.cendekia {
+    color: #5f6368;
+    font-size: 60;
+  }
+  
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #4285f4;
+}
+
+.tagline {
+    color: #80868b;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+}
+
+.footer-links a {
+    color: #5f6368;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -280px;
+    }
+    
+    .sidebar-open {
+        left: 0;
+    }
+    
+    .google-text {
+        font-size: 50px;
+    }
+    
+    .cendekia {
+        color: #5f6368;
+        font-size: 40px;
+    }
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-and-logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Jarak antara burger dan logo */
+}
+
+.cendekia-text {
+    color: #5f6368;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #5f6368;
+  }

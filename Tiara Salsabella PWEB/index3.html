@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Cendekia</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="header">
+        <button class="menu-button" aria-label="Menu">
+            <div class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </button>
+          
+        
+        <div class="logo">
+            <a href="index1.html" class="user-link">
+                <button class="logo-button" type="button">
+                    <span class="google-text">
+                        <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                    </span>
+                    <span class="product-text">Cendekia</span>
+                </button>
+            </a>
+        </div>
+        <style>
+            .logo-button {
+                background: none;
+                border: none;
+                padding: 0;
+                margin: 0;
+                font: inherit;
+                color: inherit;
+                cursor: pointer;
+                text-align: inherit;
+            }
+        </style>
+        
+        <div class="profile">
+            <button class="profile-button" aria-label="Profile">
+                <img src="image\profile.png" alt="User Profile" class="profile-image">
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="step-item active">
+                <div class="step-number">1</div>
+                <div class="step-text">Profil</div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-text">Artikel</div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-text">Setelan</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2>Lacak kutipan ke artikel Anda. Ditampilkan di Scholar.</h2>
+                <div class="email-info">
+                    <span class="email">tiarasalsabellaayuningtyas@gmail.com</span>
+                    <a href="#" class="change-account">Ganti akun</a>
+                </div>
+            </div>
+
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <div class="help-text">Nama lengkap yang ditampilkan di artikel Anda.</div>
+                    <input type="text" id="name" value="Tiara Salsabella Ayuningtyas" class="form-input">
+                </div>
+
+                <div class="add-name">
+                    <a href="#" id="add-name-link">+ Tambahkan nama lain</a>
+                </div>
+
+                <div class="form-group">
+                    <label for="affiliation">Afiliasi</label>
+                    <div class="help-text">Mis., Profesor Fisika, Universitas Princeton</div>
+                    <input type="text" id="affiliation" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email untuk verifikasi:</label>
+                    <div class="help-text">Mis., einstein@princeton.edu</div>
+                    <input type="email" id="email" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Bidang minat</label>
+                    <div class="help-text">Mis., relativitas umum, teori lapangan terpadu</div>
+                    <input type="text" id="interests" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="homepage">Halaman Beranda (opsional)</label>
+                    <div class="help-text">Mis., http://www.princeton.edu/~einstein</div>
+                    <input type="url" id="homepage" class="form-input">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="next-button">BERIKUTNYA</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
